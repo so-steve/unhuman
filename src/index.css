@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+input[type="file"] {
+  color: transparent;
+}
+
+@font-face {
+  font-family: "Menlo";
+  src: local("Menlo"), url(./fonts/Menlo-Regular.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: "Menlo" !important;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.minting:after {
+  content: ".";
+  animation: dots 2s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%,
+  15% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.7em 0 0 rgba(0, 0, 0, 0), 1.4em 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: #a6e22e;
+    text-shadow: 0.7em 0 0 rgba(0, 0, 0, 0), 1.4em 0 0 rgba(0, 0, 0, 0);
+  }
+  35% {
+    text-shadow: 0.7em 0 0 #a6e22e, 1.4em 0 0 rgba(0, 0, 0, 0);
+  }
+  45%,
+  65% {
+    text-shadow: 0.7em 0 0 #a6e22e, 1.4em 0 0 #a6e22e;
+  }
+  95%,
+  100% {
+    text-shadow: 0.7em 0 0 #a6e22e, 1.4em 0 0 #a6e22e;
+  }
+}
+
+.loading:after {
+  content: ".";
+  animation: dots2 2s steps(5, end) infinite;
+}
+
+@keyframes dots2 {
+  0%,
+  15% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.7em 0 0 rgba(0, 0, 0, 0), 1.4em 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: #66d9ef;
+    text-shadow: 0.7em 0 0 rgba(0, 0, 0, 0), 1.4em 0 0 rgba(0, 0, 0, 0);
+  }
+  35% {
+    text-shadow: 0.7em 0 0 #66d9ef, 1.4em 0 0 rgba(0, 0, 0, 0);
+  }
+  45%,
+  65% {
+    text-shadow: 0.7em 0 0 #66d9ef, 1.4em 0 0 #66d9ef;
+  }
+  95%,
+  100% {
+    text-shadow: 0.7em 0 0 #66d9ef, 1.4em 0 0 #66d9ef;
+  }
+}
+
+.square-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000000 !important;
+}
+.square-box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.square-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+.square-content div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.square-content h3 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
